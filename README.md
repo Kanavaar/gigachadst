@@ -14,7 +14,7 @@ xbps-install libXft-devel libX11-devel harfbuzz-devel libXext-devel libXrender-d
 apt install build-essential libxft-dev libharfbuzz-dev libgd-dev
 
 # Nix
-nix develop github:siduck/st
+nix develop github:kanavaar/st
 
 (most of these are already installed on Arch based distros)
 
@@ -25,12 +25,12 @@ nix develop github:siduck/st
 
 Before you install st on your system, you might want to try it out first.
 To do so, simply run (requires [Nix](https://nixos.org/download.html))
-`nix run github:siduck/st`
+`nix run github:kanavaar/st`
 
 ## Install
 
 ```
-git clone https://github.com/siduck/st.git
+git clone https://github.com/kanavaar/st.git
 cd st
 sudo make install
 xrdb merge pathToXresourcesFile
@@ -40,7 +40,7 @@ xrdb merge pathToXresourcesFile
 
 ### Using Nix flakes
 
-Add `st.url = "github:siduck/st";` to your inputs and install `inputs.st.packages."${system}".st-snazzy` package
+Add `st.url = "github:kanavaar/st";` to your inputs and install `inputs.st.packages."${system}".st-snazzy` package
 
 ## Fonts
 
